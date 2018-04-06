@@ -5,6 +5,8 @@ $(document).ready(function(){
   generateGrid();
   //creo una variabile per salvare il nome della classe;
   var elementsClass ;
+  //creo la variabile per non far eseguire la funzione di nuovo dopo la prima volta
+  var firstVictory = false
   $('.grid-items').click(function(){
     var cellbox = $(this);
     if(cellbox.hasClass('grid-items')){
@@ -23,12 +25,17 @@ $(document).ready(function(){
         isX = false;
       }
     }
-    if(isWon(elementsClass)){
-      if(elementsClass == 'x-items'){
-        $('#winTitle').html('Player1 won!');
-      }
-      else{
-        $('#winTitle').html('Player2 won!');
+    //faccio un controllo per vedere se è la prima vittoria così da non cambiare il nome del vincitore
+    if(!firstVictory){
+      if(isWon(elementsClass)){
+        if(elementsClass == 'x-items'){
+          $('#winTitle').html('Player1 won!');
+          firstVictory = true;
+        }
+        else{
+          $('#winTitle').html('Player2 won!');
+          firstVictory = true;
+        }
       }
     }
   });

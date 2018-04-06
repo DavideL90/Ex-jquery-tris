@@ -4,7 +4,7 @@
   padding: 0;
 }
 body{
-  background: #ba8d68;
+  background: radial-gradient(#dd6052, #fbb064);
 }
 #page-wrapper{
   height: 100vh;
@@ -16,7 +16,7 @@ body{
 #page-wrapper h1{
   padding-bottom: 50px;
   font-family: 'Roboto', sans-serif;
-  
+
 }
 #page-wrapper h3{
   font-size: 34px;
@@ -47,4 +47,20 @@ body{
   font-size: 50px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
+}
+#restart{
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
+}
+#restart:hover{
+  background-color: white;
+  color: black;
+  transition: all 1s;
 }
