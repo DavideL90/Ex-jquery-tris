@@ -6,6 +6,9 @@
 body{
   background: radial-gradient(#dd6052, #fbb064);
 }
+.unclickable{
+  pointer-events: none;
+}
 #page-wrapper{
   height: 100vh;
   display: flex;
