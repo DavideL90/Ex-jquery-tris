@@ -3,3 +3,48 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background: #ba8d68;
+}
+#page-wrapper{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#page-wrapper h1{
+  padding-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+#page-wrapper h3{
+  font-size: 34px;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+#tris-cnt{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#tris-cnt div{
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  border: 2px solid white;
+}
+.x-items{
+  color: lightblue;
+}
+.o-items{
+  color: lightpink;
+}
+.x-items, .o-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
