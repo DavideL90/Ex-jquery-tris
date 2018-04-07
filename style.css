@@ -38,10 +38,10 @@ body{
   border: 2px solid white;
 }
 .x-items{
-  color: lightblue;
+  color: #c8d9ff;
 }
 .o-items{
-  color: lightpink;
+  color: #b2ffb2;
 }
 .x-items, .o-items{
   display: flex;

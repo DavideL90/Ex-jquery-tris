@@ -27,12 +27,12 @@ $(document).ready(function(){
     }
     if(isWon(elementsClass)){
       if(elementsClass == 'x-items'){
-        $('#winTitle').html('Player1 won!');
+        $('#winTitle').html('Player1 win!');
         $('#tris-cnt').addClass('unclickable');
         firstVictory = true;
       }
       else{
-        $('#winTitle').html('Player2 won!');
+        $('#winTitle').html('Player2 win!');
         $('#tris-cnt').addClass('unclickable');
         firstVictory = true;
       }
